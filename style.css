@@ -1,0 +1,187 @@
+
+/* تنظیمات کلی صفحه */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    min-height: 100vh;
+    font-family: Tahoma, Arial, sans-serif;
+    color: #f8f1e5;
+    background:
+        radial-gradient(
+            circle at top,
+            #40301b 0,
+            #211b13 35%,
+            #100e0a 80%
+        );
+    line-height: 1.8;
+}
+
+/* بخش اصلی */
+.container {
+    width: 100%;
+    max-width: 480px;
+    min-height: 100vh;
+    margin: 0 auto;
+    padding: 32px 22px 24px;
+}
+
+/* سربرگ برند */
+.brand {
+    text-align: center;
+    padding: 10px 0 28px;
+}
+
+.logo {
+    width: 88px;
+    height: 88px;
+    margin: 0 auto 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 45px;
+    background: #302518;
+    border: 2px solid #caa45b;
+    border-radius: 50%;
+    box-shadow: 0 0 25px #caa45b22;
+}
+
+.welcome {
+    margin: 8px 0;
+    color: #d7bd83;
+    font-size: 14px;
+}
+
+h1 {
+    margin: 4px 0 10px;
+    color: #edcd83;
+    font-size: 32px;
+}
+
+.subtitle {
+    margin: 0 auto;
+    color: #d6cbb8;
+    font-size: 13px;
+}
+
+/* عنوان شبکه‌های اجتماعی */
+.social-section h2 {
+    margin: 0 0 18px;
+    text-align: center;
+    font-size: 17px;
+    font-weight: normal;
+    color: #f3e6cf;
+}
+
+/* دکمه‌های شبکه اجتماعی */
+.social-button {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    width: 100%;
+    min-height: 62px;
+    margin-bottom: 13px;
+    padding: 13px 16px;
+    border: 1px solid #ffffff20;
+    border-radius: 15px;
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: bold;
+    box-shadow: 0 5px 14px #00000020;
+    transition: transform 0.2s, filter 0.2s;
+}
+
+.social-button:hover {
+    transform: translateY(-2px);
+    filter: brightness(1.12);
+}
+
+.social-icon {
+    font-size: 23px;
+}
+
+.arrow {
+    margin-right: auto;
+    font-size: 20px;
+    opacity: 0.8;
+}
+
+.instagram {
+    background: linear-gradient(120deg, #a52d69, #633b83);
+}
+
+.telegram {
+    background: #168bc1;
+}
+
+.rubika {
+    background: #425cae;
+}
+
+.whatsapp {
+    background: #168653;
+}
+
+/* تماس و سفارش */
+.contact-section {
+    margin-top: 28px;
+    padding-top: 20px;
+    border-top: 1px solid #caa45b55;
+    text-align: center;
+}
+
+.contact-section p {
+    color: #d7bd83;
+    font-size: 14px;
+}
+
+.phone-button {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    padding: 15px;
+    border: 1px solid #caa45b;
+    border-radius: 15px;
+    color: #f4d58f;
+    background: #caa45b12;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.phone-button span {
+    direction: ltr;
+    font-size: 19px;
+}
+
+/* پایین صفحه */
+footer {
+    margin-top: 25px;
+    text-align: center;
+    color: #d9c8a8;
+    font-size: 13px;
+}
+
+.copyright {
+    color: #8f836e;
+    font-size: 11px;
+}
+
+/* سازگاری با گوشی‌های کوچک */
+@media (max-width: 360px) {
+    .container {
+        padding: 24px 15px;
+    }
+
+    h1 {
+        font-size: 27px;
+    }
+
+    .social-button {
+        gap: 8px;
+        padding: 12px;
+        font-size: 12px;
+    }
+}
